@@ -1,0 +1,22 @@
+@import './_weather-page.css';
+
+body {
+    background: #243b55;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.header {
+    position: relative;
+    padding: 10%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);  
+    background-image: url("https://pixabay.com/get/52e6d4444a5ba814ead98d75c621307e1522dfe35251744e70277fd1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 0.5px solid #fff;
+}
+
