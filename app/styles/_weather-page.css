@@ -1,12 +1,13 @@
 input {
     padding: 10px 0;
     font-size: 16px;
-    color: #fff;
+    color:royalblue;
     margin-top: 30px;
     border: 1px solid #fff;
     border-radius: 10px;
     outline: none;
-    background: transparent;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
     text-align: center;    
 }
 
@@ -19,48 +20,13 @@ label {
     transition: .5s;
 }
 
-button{
-    display:inline-block;
-    padding:0.5em 3em;
-    border:0.16em solid #FFFFFF;
-    border-radius: 10px;
-    margin:0 0.3em 0.3em 0;
-    box-sizing: border-box;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-family:'Roboto',sans-serif;
-    background-color: #4e9af1;
-    font-weight:400;
-    color: black;
-    text-align:center;
-    transition: all 0.15s;
-}
 
-
-button:hover{
-    cursor: pointer;
-    color:#FFFFFF;
-    border-color:#FFFFFF;
-}
-
-button:active{
-    color:#4e9af1;
-    border-color:#FFFFFF;
-}
-
-@media all and (max-width:30em){
-    button{
-        display: block;
-        margin: 0.4em auto;
-    }
-}
-
-a.button{
+button, a.button{
     display: inline-block;
     padding:0.46em 1.6em;
     border:0.1em solid #000000;
     border-radius: 10px;
-    margin:0 0.2em 0.2em 0;
+    margin: 2% auto;
     border-radius:0.12em;
     box-sizing: border-box;
     text-decoration:none;
@@ -68,12 +34,14 @@ a.button{
     font-weight:300;
     color:#000000;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
-    background-color:#42cc8c;
+    background: rgba(31, 150, 86, 0.1);
+    backdrop-filter: blur(8px);
     text-align:center;
     transition: all 0.15s;
+    border-radius: 10px;
 }
 
-a.button:hover{
+button:hover, a.button:hover{
     cursor: pointer;
     text-shadow: 0 0 2em rgba(255,255,255,1);
     color:#FFFFFF;
@@ -89,4 +57,15 @@ a.button:hover{
 
 #WeatherPage {
     text-align: center;
+}
+
+#current_weather {
+    padding: 1em;
+    border: 1px solid #FFFFFF;
+    color: white;
+    border-radius: 10px;
+    margin: 2% auto;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(8px);
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5);
 }

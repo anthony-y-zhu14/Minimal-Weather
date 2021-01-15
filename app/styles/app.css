@@ -1,8 +1,25 @@
 @import './_weather-page.css';
 
 body {
-    background: #243b55;
+    background: linear-gradient(-45deg, #25bdb5, #211f8a, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    background-repeat: stretch;
+    background-attachment: fixed;
+	animation: gradient 15s ease infinite;
     font-family: "Montserrat", sans-serif;
+    
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
@@ -11,8 +28,8 @@ body {
     padding: 10%;
     text-align: center;
     color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);  
-    background-image: url("https://pixabay.com/get/52e6d4444a5ba814ead98d75c621307e1522dfe35251744e70277fd1.jpg");
+    text-shadow: 5px 1px 4px rgba(0, 0, 0, 0.5);  
+    background-image: url("./sky.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
